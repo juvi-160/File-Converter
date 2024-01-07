@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <div class="nav-bar" style="display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 10;">
+        <a href="" class="back-icon" style="visibility: hidden;font-size: 36px;
+        padding: 5px;
+        margin-left: 20px;
+        cursor:pointer;">
+        <i class="" style="color: gray;"></i>
+        </a>
+        <div class="title" style="font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        color: white;
+        padding: 5px;">
+        <a href="/" style="font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        color: white;
+        padding: 5px;"> Upload & Convert Files</a>
+        </div>
+        <ul class="menu">
+            <li  class="bg" ><a class="active" href="/uploadimg" style="color:white; float:right">Upload Images</a></li>
+            <li  class="bg" ><a class="active" href="/uploaddoc" style="color: white; float:right">Upload Documents</a></li>
+            <li  class="bg" ><a class="active" href="/docxtopdf" style="color: white; float:left">Convert Docx to PDF</a></li>
+        </ul>
+        
+    </div>
+    
+    
+    <div class="container">
+        <div class="center-text">
+            <h1 style="font-size: 44px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; height: 35px;">Upload Image File Here</h1>
+            <p style="font-size: 22px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: blanchedalmond;">Upload Images (JPEG,PNG,JPG...)</p>
+        </div>
+
+    <form action="/uploadImg" method="post" enctype="multipart/form-data">
+        <div class="input-container" style="display: flex; flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        margin: auto; height: 150px;
+        width: 450px;
+        background-color: #f8f8f8;
+        border: 2px dashed lightgrey;
+        border-radius: 25px;
+        opacity: 0.8;">
+            <input type="file" id="Images" name="images" accept=".PNG,.JPEG,.jpg" multiple>
+            <button class="upload-btn" style=" width: 130px;
+            height: 40px;
+            border: none;
+            background-color:black;
+            color:#fff;
+            font-size: 16px;
+            border-radius: 7px;">Upload</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

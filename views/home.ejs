@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/index.css">
+    
+</head>
+<body>
+
+    <!-- header -->
+    <div class="nav-bar" style="display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    ">
+        <a href="/" class="back-icon" style="visibility: hidden;font-size: 36px;
+        padding: 5px;
+        margin-left: 20px;
+        cursor:pointer;">
+        <i class="" style="color: gray;"></i>
+        </a>
+        <div class="title" >
+        <a href="/" style="font-size: 30px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        color: white;
+        padding: 5px;"> Upload & Convert Files</a>
+        
+        </div>
+        <ul class="menu">
+            <li><a class="active" href="/uploadimg" style="color:white; ">Upload Images</a></li>
+            <li><a class="active" href="/uploaddoc" style="color: white;">Upload Documents</a></li>
+            <li><a class="active" href="/docxtopdf" style="color: white;">Convert Docx to PDF</a></li>
+        
+        </ul>
+        
+    </div>
+
+    <div class="card" style="text-align: center; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: whitesmoke;
+  text-align: center;
+  margin: 150px;
+  opacity: 0.8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 2px 16px;
+  ">
+        <h1>Hello everyone!</h1>
+        <p style="color: darkblue;">"Welcome to my website, your go-to destination for seamless file uploading and conversion. Unlock the power of versatility as you effortlessly upload and transform your files into various formats. Experience efficiency and convenience – start exploring the possibilities today!"</p>
+
+        <p>~ Juveria Yameen </p>
+     </div>
+    
+
+<!-- 
+    <div class="container">
+        <div class="center-text">
+            <h1 style="font-size: 44px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; height: 35px;">Upload Image File Here</h1>
+            <p style="font-size: 22px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: gray;">Upload Images (JPEG,PNG,JPG...)</p>
+        </div>
+
+    <form action="/uploadImg" method="post" enctype="multipart/form-data">
+        <div class="input-container" style="display: flex; flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        margin: auto; height: 150px;
+        width: 450px;
+        background-color: #f8f8f8;
+        border: 2px dashed lightgrey;
+        border-radius: 25px;">
+            <input type="file" id="Images" name="images" accept=".PNG,.JPEG,.jpg" multiple>
+            <button class="upload-btn" style=" width: 130px;
+            height: 40px;
+            border: none;
+            background-color:green;
+            color:#fff;
+            font-size: 16px;
+            border-radius: 7px;">Upload</button>
+        </div>
+    </form>
+</div> -->
+
+
+    <!-- <div class="container">
+        <div class="center-text">
+            <h1 style="font-size: 44px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; height: 35px;">Upload Document File Here</h1>
+            <p style="font-size: 22px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: gray;">Upload Documents (PDF,Doc,Docx...)</p>
+        </div>
+    <form action="/uploadDoc" method="post" enctype="multipart/form-data">
+        <div class="input-container" style="display: flex; flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        margin: auto; height: 150px;
+        width: 450px;
+        background-color: #f8f8f8;
+        border: 2px dashed lightgrey;
+        border-radius: 25px;">
+            <input type="file" id="Document" name="document" accept=".PDF,.Docx,.TXT" multiple>
+            <button class="upload-btn" style=" width: 130px;
+            height: 40px;
+            border: none;
+            background-color:green;
+            color:#fff;
+            font-size: 16px;
+            border-radius: 7px;">Upload</button>
+        </div>
+    </form>
+    </div> -->
+
+
+    <!-- <div class="container">
+        <div class="center-text">
+            <h1 style="font-size: 44px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; height: 35px;">Convert File Here</h1>
+            <p style="font-size: 22px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: gray;">Convert Docx/Doc to PDF</p>
+        </div>
+
+    <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+        <div class="input-container" style="display: flex; flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        margin: auto; height: 150px;
+        width: 450px;
+        background-color: #f8f8f8;
+        border: 2px dashed lightgrey;
+        border-radius: 25px;">
+            <input type="file" id="File" name="file" accept=".Doc,.Docx" multiple>
+            <button class="upload-btn" style=" width: 130px;
+            height: 40px;
+            border: none;
+            background-color:green;
+            color:#fff;
+            font-size: 16px;
+            border-radius: 7px;">Download</button>
+        </div>
+    </form>
+</div> -->
+</body>
+</html>
