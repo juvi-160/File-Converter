@@ -1,0 +1,11 @@
+body{
+    background-image: url('painting-mountain-lake-with-mountain-background_188544-9126.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
