@@ -7,14 +7,6 @@ const fs = require('fs');
 const app = express();
 
 
-
-const db= mongoose.connection;
-db.on("error", console.error.bind(console,"connection error:"));
-db.once("open", () => {
-    console.log("Database connected");
-});
-
-
 const docxtopdfRoutes = require('./routes/docxtopdf');
 const uploadDocRoutes = require('./routes/uploadDoc');
 
